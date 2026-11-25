@@ -71,7 +71,1950 @@
             -webkit-backdrop-filter: blur(6px);
         }
 
+        .product-card {<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Car Fashion Hub | Online Car Accessories Store — Ode Chokdi, Umreth</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Rajdhani -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Rajdhani', 'sans-serif'],
+                    },
+                    colors: {
+                        carbon: {
+                            950: '#0a0b0e',
+                            900: '#0f1115',
+                            850: '#14171c',
+                            800: '#181b20',
+                            700: '#242933',
+                        },
+                        racing: {
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0b0e;
+            background-image: 
+                radial-gradient(circle at 12% 10%, rgba(225, 29, 72, 0.08) 0%, transparent 42%),
+                radial-gradient(circle at 88% 85%, rgba(245, 158, 11, 0.06) 0%, transparent 42%),
+                repeating-linear-gradient(45deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 2px, transparent 2px, transparent 6px);
+            color: #f4f4f5;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .glass-bar {
+            background: rgba(15, 17, 21, 0.92);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        .modal-backdrop {
+            background: rgba(0, 0, 0, 0.82);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+        }
+
         .product-card {
+            transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+        }
+        .product-card:hover {
+            border-color: rgba(225, 29, 72, 0.45);
+            box-shadow: 0 14px 30px -12px rgba(225, 29, 72, 0.25);
+        }
+
+        @media print {
+            body * { visibility: hidden; }
+            #printableInvoiceArea, #printableInvoiceArea * { visibility: visible; }
+            #printableInvoiceArea {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                background: #ffffff !important;
+                color: #000000 !important;
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-racing-600 selection:text-white pb-24">
+
+    <!-- Top Store Announcement Strip -->
+    <div class="bg-gradient-to-r from-racing-700 via-racing-600 to-amber-600 text-white text-[11px] sm:text-xs py-1.5 px-3 text-center font-semibold tracking-wide flex items-center justify-center gap-2">
+        <i class="fa-solid fa-truck-fast"></i>
+        <span>Online Orders & Store Fitting • Cash on Delivery / Shop Cash & UPI • Ode Chokdi, Umreth</span>
+    </div>
+
+    <!-- Sticky E-Commerce Header -->
+    <header class="sticky top-0 z-40 glass-bar border-b border-zinc-800/90 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-3.5 sm:px-6 py-3">
+            <div class="flex items-center justify-between gap-3">
+                <!-- Brand Identity -->
+                <div class="flex items-center gap-3 min-w-0">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-racing-600 to-amber-500 p-[2px] shadow-lg shadow-racing-600/25 flex-shrink-0">
+                        <div class="w-full h-full bg-carbon-900 rounded-[14px] flex items-center justify-center">
+                            <svg class="w-7 h-7" viewBox="0 0 36 36" fill="none">
+                                <path d="M5 22L8.5 13.5C9.3 11.6 11.1 10.5 13.1 10.5H22.9C24.9 10.5 26.7 11.6 27.5 13.5L31 22" stroke="#e11d48" stroke-width="2.4" stroke-linecap="round"/>
+                                <rect x="3.5" y="19.5" width="29" height="7.5" rx="3.5" fill="#181b20" stroke="#f59e0b" stroke-width="2"/>
+                                <circle cx="10" cy="23.5" r="2" fill="#e11d48"/>
+                                <circle cx="26" cy="23.5" r="2" fill="#e11d48"/>
+                                <path d="M14.5 23.5H21.5" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="min-w-0">
+                        <div class="flex items-center gap-2">
+                            <h1 class="font-display text-xl sm:text-3xl font-bold tracking-wider uppercase text-white leading-none truncate">
+                                CAR FASHION <span class="text-racing-600">HUB</span>
+                            </h1>
+                            <span id="adminHeaderPill" class="hidden px-2 py-0.5 text-[10px] font-bold uppercase bg-amber-500/20 text-amber-400 border border-amber-500/40 rounded-full">
+                                Seller Mode
+                            </span>
+                        </div>
+                        <p class="text-[11px] sm:text-xs text-zinc-400 truncate mt-0.5">
+                            Premium Aftermarket Car Accessories & Professional Installation
+                        </p>
+                        <p class="text-[10px] sm:text-[11px] text-amber-400/95 font-medium flex items-center gap-1 mt-0.5">
+                            <i class="fa-solid fa-location-dot text-[10px]"></i>
+                            <span>Ode Chokdi, Umreth, Gujarat • +91 76008 61847</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Top Header Actions -->
+                <div class="flex items-center gap-2 flex-shrink-0">
+                    <a href="tel:7600861847" class="hidden md:inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-carbon-800 hover:bg-carbon-700 border border-zinc-700 text-xs font-semibold text-white transition">
+                        <i class="fa-solid fa-phone text-amber-400"></i>
+                        <span>76008 61847</span>
+                    </a>
+                    <a href="https://wa.me/917600861847?text=Hello%20Car%20Fashion%20Hub!%20I%20am%20visiting%20your%20online%20store%20and%20need%20help%20choosing%20car%20accessories." target="_blank" rel="noopener" class="w-10 h-10 sm:w-auto sm:px-3.5 sm:py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold inline-flex items-center justify-center gap-1.5 shadow-lg shadow-emerald-600/20 transition active:scale-95">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span class="hidden sm:inline">WhatsApp</span>
+                    </a>
+                    <button onclick="openCartDrawer()" class="relative inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-racing-600 hover:bg-racing-500 text-white text-xs sm:text-sm font-bold shadow-lg shadow-racing-600/25 transition active:scale-95">
+                        <i class="fa-solid fa-bag-shopping text-sm"></i>
+                        <span class="hidden sm:inline">Cart</span>
+                        <span id="headerCartCount" class="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 text-[11px] font-extrabold rounded-full bg-amber-400 text-carbon-950">
+                            0
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Search Bar Row -->
+            <div class="mt-3 flex items-center gap-2">
+                <div class="relative flex-1">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 text-xs sm:text-sm"></i>
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        oninput="handleSearchInput()" 
+                        placeholder="Search seat covers, TS10 Android, LED bulbs, dashcam, mats..." 
+                        class="w-full pl-9 pr-9 py-2.5 bg-carbon-800 border border-zinc-700/90 focus:border-racing-600 focus:ring-1 focus:ring-racing-600 rounded-xl text-xs sm:text-sm text-white placeholder-zinc-500 outline-none transition"
+                    >
+                    <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white p-1">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <button onclick="openSellerAdminTrigger()" class="px-3 py-2.5 rounded-xl bg-carbon-800 hover:bg-carbon-700 border border-zinc-700 text-zinc-300 hover:text-amber-400 text-xs font-semibold inline-flex items-center gap-1.5 flex-shrink-0 transition" title="Seller Admin Panel">
+                    <i class="fa-solid fa-store text-amber-400"></i>
+                    <span class="hidden md:inline">Seller Panel</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Quick Car Model Filter Bar -->
+        <div class="border-t border-zinc-800/80 bg-carbon-900/90">
+            <div class="max-w-7xl mx-auto px-3.5 sm:px-6 py-2 flex items-center gap-2 overflow-x-auto no-scrollbar">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-zinc-500 flex-shrink-0 flex items-center gap-1">
+                    <i class="fa-solid fa-car text-racing-500"></i> Car:
+                </span>
+                <div id="carModelPills" class="flex items-center gap-1.5">
+                    <!-- Rendered dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="border-t border-zinc-800/70 bg-carbon-950/90">
+            <div class="max-w-7xl mx-auto px-3.5 sm:px-6 py-2.5 flex items-center gap-2 overflow-x-auto no-scrollbar" id="categoryPills">
+                <!-- Rendered dynamically -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner & Trust Badges -->
+    <section class="max-w-7xl w-full mx-auto px-3.5 sm:px-6 pt-4 sm:pt-6">
+        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-carbon-900 via-carbon-800 to-carbon-950 border border-zinc-800 p-5 sm:p-8 shadow-2xl">
+            <div class="absolute -right-12 -top-12 w-56 h-56 rounded-full bg-racing-600/15 blur-3xl pointer-events-none"></div>
+            <div class="absolute -left-12 -bottom-12 w-56 h-56 rounded-full bg-amber-500/10 blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                <div class="max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-racing-600/15 border border-racing-600/30 text-racing-500 text-xs font-bold uppercase tracking-wider mb-3">
+                        <i class="fa-solid fa-bolt"></i> Gujarat's Trusted Car Styling & Audio Store
+                    </div>
+                    <h2 class="font-display text-2xl sm:text-4xl font-bold uppercase tracking-wide text-white leading-tight">
+                        Upgrade Your Drive — Order Online or Get <span class="text-amber-400">Expert Fitting</span> at Umreth
+                    </h2>
+                    <p class="text-xs sm:text-sm text-zinc-400 mt-2 leading-relaxed">
+                        Shop genuine Nappa seat covers, TS10 QLED Android screens, high-power LEDs, 7D mats & bass tubes. Choose <strong>Home Delivery across Gujarat</strong> or <strong>Store Pickup + Installation at Ode Chokdi, Umreth</strong>.
+                    </p>
+                </div>
+
+                <!-- 4 Trust Badges Grid -->
+                <div class="grid grid-cols-2 gap-2.5 sm:gap-3 lg:w-[440px] flex-shrink-0">
+                    <div class="bg-carbon-950/80 border border-zinc-800 rounded-2xl p-3 flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-xl bg-racing-600/15 text-racing-500 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white">100% Genuine</p>
+                            <p class="text-[10px] text-zinc-400">Brand Warranty</p>
+                        </div>
+                    </div>
+                    <div class="bg-carbon-950/80 border border-zinc-800 rounded-2xl p-3 flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Expert Fitting</p>
+                            <p class="text-[10px] text-zinc-400">At Umreth Store</p>
+                        </div>
+                    </div>
+                    <div class="bg-carbon-950/80 border border-zinc-800 rounded-2xl p-3 flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-xl bg-blue-500/15 text-blue-400 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white">COD / Pickup</p>
+                            <p class="text-[10px] text-zinc-400">Cash & UPI at Shop</p>
+                        </div>
+                    </div>
+                    <div class="bg-carbon-950/80 border border-zinc-800 rounded-2xl p-3 flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Instant Support</p>
+                            <p class="text-[10px] text-zinc-400">Direct Owner Chat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Product Catalog Section -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-3.5 sm:px-6 pt-6 pb-12">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+            <div>
+                <h3 id="catalogHeading" class="font-display text-xl sm:text-2xl font-bold uppercase tracking-wide text-white">
+                    All Car Accessories
+                </h3>
+                <p id="catalogSubheading" class="text-xs text-zinc-400">Showing 12 products ready for order & installation</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <select id="sortSelect" onchange="renderProductGrid()" class="bg-carbon-800 border border-zinc-700 rounded-xl px-3 py-2 text-xs text-zinc-200 outline-none focus:border-racing-600">
+                    <option value="featured">Sort: Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="discount">Highest Discount</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
+            <!-- Product Cards Rendered via JS -->
+        </div>
+
+        <!-- Empty Search State -->
+        <div id="emptyState" class="hidden py-14 px-4 text-center bg-carbon-900 border border-zinc-800 rounded-3xl">
+            <div class="w-16 h-16 rounded-2xl bg-carbon-800 border border-zinc-700 flex items-center justify-center mx-auto mb-3 text-racing-500 text-2xl">
+                <i class="fa-solid fa-car-burst"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white">No matching accessories found</h4>
+            <p class="text-xs sm:text-sm text-zinc-400 max-w-md mx-auto mt-1 mb-5">
+                We stock custom parts for all Indian cars. Reset filters or message us directly on WhatsApp to order any part!
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <button onclick="resetAllFilters()" class="px-4 py-2.5 rounded-xl bg-carbon-800 hover:bg-carbon-700 border border-zinc-700 text-xs sm:text-sm font-semibold text-white transition">
+                    Reset All Filters
+                </button>
+                <a href="https://wa.me/917600861847?text=Hello%20Car%20Fashion%20Hub!%20I%20want%20to%20order%20a%20car%20accessory%20for%20my%20car." target="_blank" rel="noopener" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs sm:text-sm font-bold text-white inline-flex items-center gap-2 transition">
+                    <i class="fa-brands fa-whatsapp"></i> Request Part on WhatsApp
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Store Policies & Footer -->
+    <footer class="bg-carbon-900 border-t border-zinc-800 pt-8 pb-24 sm:pb-12 px-3.5 sm:px-6 mt-auto">
+        <div class="max-w-7xl mx-auto space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-carbon-950/70 border border-zinc-800 rounded-2xl p-4">
+                    <p class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">
+                        <i class="fa-solid fa-store mr-1.5"></i>Store Pickup & Fitting
+                    </p>
+                    <p class="text-xs text-zinc-400 leading-relaxed">
+                        Visit <strong>Ode Chokdi, Umreth</strong> for clean coupler-to-coupler installation. Pay Cash or UPI after fitting.
+                    </p>
+                </div>
+                <div class="bg-carbon-950/70 border border-zinc-800 rounded-2xl p-4">
+                    <p class="text-xs font-bold text-racing-500 uppercase tracking-wider mb-1">
+                        <i class="fa-solid fa-truck mr-1.5"></i>Gujarat Home Delivery
+                    </p>
+                    <p class="text-xs text-zinc-400 leading-relaxed">
+                        Fast courier across Umreth, Anand, Kheda, Nadiad, Vadodara & all Gujarat. COD available on standard stock.
+                    </p>
+                </div>
+                <div class="bg-carbon-950/70 border border-zinc-800 rounded-2xl p-4">
+                    <p class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-1">
+                        <i class="fa-solid fa-receipt mr-1.5"></i>Special / Custom Orders
+                    </p>
+                    <p class="text-xs text-zinc-400 leading-relaxed">
+                        Custom tailored seat covers & model-specific kits require a small advance token deposit via UPI/Cash.
+                    </p>
+                </div>
+                <div class="bg-carbon-950/70 border border-zinc-800 rounded-2xl p-4">
+                    <p class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">
+                        <i class="fa-solid fa-headset mr-1.5"></i>Showroom Contact
+                    </p>
+                    <p class="text-xs text-zinc-300 font-semibold">Car Fashion Hub</p>
+                    <p class="text-xs text-zinc-400">Ode Chokdi, Umreth, Gujarat</p>
+                    <a href="tel:7600861847" class="inline-block mt-1 text-xs font-bold text-amber-400 hover:underline">
+                        Call / WhatsApp: +91 76008 61847
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-4 border-t border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-500">
+                <p>© 2026 Car Fashion Hub, Ode Chokdi, Umreth. All Rights Reserved.</p>
+                <button onclick="openSellerAdminTrigger()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-carbon-800 hover:bg-carbon-700 border border-zinc-700 text-zinc-300 hover:text-amber-400 font-semibold transition">
+                    <i class="fa-solid fa-user-shield text-amber-400"></i>
+                    <span>Seller Admin Panel</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Bottom Cart Bar (Mobile & Desktop when Cart > 0) -->
+    <div id="floatingCartBar" class="hidden fixed bottom-16 sm:bottom-5 left-3.5 right-3.5 z-30 max-w-2xl mx-auto">
+        <div class="bg-gradient-to-r from-carbon-900 via-carbon-800 to-carbon-900 border border-racing-600/50 shadow-2xl shadow-black rounded-2xl p-3 sm:px-5 flex items-center justify-between gap-3">
+            <div onclick="openCartDrawer()" class="flex items-center gap-3 cursor-pointer">
+                <div class="w-10 h-10 rounded-xl bg-racing-600 text-white font-extrabold flex items-center justify-center text-sm shadow-md">
+                    <span id="floatingCartCount">0</span>
+                </div>
+                <div>
+                    <p class="text-xs sm:text-sm font-bold text-white">Items in Shopping Cart</p>
+                    <p id="floatingCartTotal" class="text-xs font-semibold text-amber-400">Total: ₹0</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <button onclick="openCartDrawer()" class="px-3.5 py-2.5 rounded-xl bg-carbon-700 hover:bg-zinc-600 text-xs font-bold text-white transition">
+                    View Cart
+                </button>
+                <button onclick="openCheckoutModal()" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-racing-600 to-amber-600 hover:from-racing-500 hover:to-amber-500 text-white text-xs sm:text-sm font-bold shadow-lg shadow-racing-600/25 transition active:scale-95">
+                    Checkout <i class="fa-solid fa-arrow-right ml-1"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Fixed Bottom Navigation Bar (iPhone & Android Friendly) -->
+    <nav class="sm:hidden fixed bottom-0 left-0 right-0 z-30 glass-bar border-t border-zinc-800 grid grid-cols-4 py-1.5 px-2 text-[10px] font-semibold text-zinc-400">
+        <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="flex flex-col items-center justify-center py-1 text-racing-500">
+            <i class="fa-solid fa-house text-base mb-0.5"></i>
+            <span>Store</span>
+        </button>
+        <button onclick="document.getElementById('searchInput').focus()" class="flex flex-col items-center justify-center py-1 hover:text-white">
+            <i class="fa-solid fa-magnifying-glass text-base mb-0.5"></i>
+            <span>Search</span>
+        </button>
+        <button onclick="openCartDrawer()" class="relative flex flex-col items-center justify-center py-1 hover:text-white">
+            <i class="fa-solid fa-bag-shopping text-base mb-0.5"></i>
+            <span>Cart</span>
+            <span id="mobileNavCartBadge" class="hidden absolute top-0.5 right-6 min-w-[16px] h-4 px-1 rounded-full bg-racing-600 text-white text-[9px] font-bold flex items-center justify-center">0</span>
+        </button>
+        <button onclick="openSellerAdminTrigger()" class="flex flex-col items-center justify-center py-1 hover:text-amber-400">
+            <i class="fa-solid fa-user-gear text-base mb-0.5"></i>
+            <span>Seller</span>
+        </button>
+    </nav>
+
+    <!-- ==================== MODALS & DRAWERS ==================== -->
+
+    <!-- 1. Product Detail Modal -->
+    <div id="productDetailModal" class="hidden fixed inset-0 z-50 modal-backdrop flex items-end sm:items-center justify-center p-0 sm:p-4">
+        <div class="bg-carbon-900 border border-zinc-800 w-full sm:max-w-2xl rounded-t-3xl sm:rounded-3xl overflow-hidden shadow-2xl max-h-[92vh] flex flex-col">
+            <div class="px-5 py-3.5 border-b border-zinc-800 flex items-center justify-between bg-carbon-950/70">
+                <span id="detailCategoryBadge" class="px-2.5 py-1 rounded-lg bg-racing-600/15 border border-racing-600/30 text-racing-500 text-xs font-bold">
+                    Category
+                </span>
+                <button onclick="closeProductDetailModal()" class="w-9 h-9 rounded-xl bg-carbon-800 hover:bg-carbon-700 text-zinc-400 hover:text-white flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="p-5 overflow-y-auto space-y-5 flex-1">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 items-center">
+                    <!-- Visual Box -->
+                    <div id="detailVisualBox" class="h-48 sm:h-56 rounded-2xl bg-carbon-800 border border-zinc-700/80 flex items-center justify-center overflow-hidden p-4">
+                        <!-- SVG or Uploaded Photo -->
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="space-y-2.5">
+                        <div class="flex items-center gap-2">
+                            <span id="detailStockBadge" class="px-2 py-0.5 rounded-md bg-emerald-500/15 text-emerald-400 text-[11px] font-bold">In Stock</span>
+                            <span id="detailWarrantyBadge" class="px-2 py-0.5 rounded-md bg-amber-500/15 text-amber-400 text-[11px] font-semibold">1 Year Warranty</span>
+                        </div>
+                        <h3 id="detailTitle" class="text-lg sm:text-xl font-bold text-white leading-snug">Product Title</h3>
+                        <div class="flex items-baseline gap-2.5">
+                            <span id="detailPrice" class="font-display text-3xl font-bold text-amber-400">₹0</span>
+                            <span id="detailMrp" class="text-sm text-zinc-500 line-through">₹0</span>
+                            <span id="detailDiscount" class="px-2 py-0.5 rounded-md bg-racing-600 text-white text-[11px] font-bold">0% OFF</span>
+                        </div>
+                        <p class="text-xs text-zinc-400">
+                            <strong class="text-zinc-200">Compatible Cars:</strong> <span id="detailCars">Universal</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Specifications Box -->
+                <div class="bg-carbon-950/80 border border-zinc-800 rounded-2xl p-4 space-y-1.5">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-300">Specifications & Fitment Details</h4>
+                    <p id="detailSpecs" class="text-xs sm:text-sm text-zinc-400 leading-relaxed"></p>
+                </div>
+
+                <!-- Installation Choice -->
+                <div class="space-y-2">
+                    <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300">Select Purchase & Fitting Option:</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <label class="cursor-pointer">
+                            <input type="radio" name="detailInstallOption" value="Product Only (Delivery / Pickup)" checked class="peer sr-only">
+                            <div class="p-3 rounded-xl bg-carbon-950 border border-zinc-800 peer-checked:border-racing-600 peer-checked:bg-racing-600/10 transition">
+                                <p class="text-xs font-bold text-white flex items-center gap-1.5">
+                                    <i class="fa-solid fa-box text-amber-400"></i> Product Only
+                                </p>
+                                <p class="text-[11px] text-zinc-400 mt-0.5">Home Delivery or Self Pickup</p>
+                            </div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="detailInstallOption" value="With Store Installation at Umreth" class="peer sr-only">
+                            <div class="p-3 rounded-xl bg-carbon-950 border border-zinc-800 peer-checked:border-amber-500 peer-checked:bg-amber-500/10 transition">
+                                <p class="text-xs font-bold text-white flex items-center gap-1.5">
+                                    <i class="fa-solid fa-wrench text-racing-500"></i> With Store Installation
+                                </p>
+                                <p class="text-[11px] text-zinc-400 mt-0.5">Fitting at Ode Chokdi, Umreth</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Quantity Selector -->
+                <div class="flex items-center justify-between bg-carbon-950 border border-zinc-800 rounded-2xl px-4 py-3">
+                    <span class="text-xs sm:text-sm font-semibold text-zinc-300">Quantity:</span>
+                    <div class="flex items-center gap-3">
+                        <button type="button" onclick="changeDetailQty(-1)" class="w-8 h-8 rounded-lg bg-carbon-800 hover:bg-carbon-700 text-white font-bold flex items-center justify-center">
+                            <i class="fa-solid fa-minus text-xs"></i>
+                        </button>
+                        <span id="detailQtyValue" class="w-6 text-center text-sm font-bold text-white">1</span>
+                        <button type="button" onclick="changeDetailQty(1)" class="w-8 h-8 rounded-lg bg-carbon-800 hover:bg-carbon-700 text-white font-bold flex items-center justify-center">
+                            <i class="fa-solid fa-plus text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Bottom Buttons -->
+            <div class="p-4 border-t border-zinc-800 bg-carbon-950 grid grid-cols-2 gap-3">
+                <button onclick="addFromDetailModal(false)" class="py-3 px-4 rounded-xl bg-carbon-800 hover:bg-carbon-700 border border-zinc-700 text-white text-xs sm:text-sm font-bold inline-flex items-center justify-center gap-2 transition active:scale-95">
+                    <i class="fa-solid fa-cart-plus text-amber-400"></i>
+                    <span>Add to Cart</span>
+                </button>
+                <button onclick="addFromDetailModal(true)" class="py-3 px-4 rounded-xl bg-gradient-to-r from-racing-600 to-amber-600 hover:from-racing-500 hover:to-amber-500 text-white text-xs sm:text-sm font-bold inline-flex items-center justify-center gap-2 shadow-lg shadow-racing-600/25 transition active:scale-95">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Buy Now</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Slide-Over Shopping Cart Drawer -->
+    <div id="cartDrawerBackdrop" class="hidden fixed inset-0 z-50 modal-backdrop flex justify-end">
+        <div class="bg-carbon-900 border-l border-zinc-800 w-full max-w-md h-full flex flex-col shadow-2xl">
+            <div class="px-5 py-4 border-b border-zinc-800 flex items-center justify-between bg-carbon-950">
+                <div class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-bag-shopping text-racing-500 text-lg"></i>
+                    <div>
+                        <h3 class="font-display text-xl font-bold uppercase text-white">Shopping Cart</h3>
+                        <p id="cartDrawerSubtitle" class="text-xs text-zinc-400">0 items selected</p>
+                    </div>
+                </div>
+                <button onclick="closeCartDrawer()" class="w-9 h-9 rounded-xl bg-carbon-800 hover:bg-carbon-700 text-zinc-400 hover:text-white flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div id="cartItemsContainer" class="p-4 overflow-y-auto flex-1 space-y-3">
+                <!-- Cart items rendered via JS -->
+            </div>
+
+            <div id="cartFooterBox" class="p-5 border-t border-zinc-800 bg-carbon-950 space-y-3">
+                <div class="space-y-1.5 text-xs">
+                    <div class="flex justify-between text-zinc-400">
+                        <span>Items Subtotal:</span>
+                        <span id="cartSubtotalText" class="text-white font-semibold">₹0</span>
+                    </div>
+                    <div class="flex justify-between text-zinc-400">
+                        <span>Total MRP Savings:</span>
+                        <span id="cartSavingsText" class="text-emerald-400 font-semibold">- ₹0</span>
+                    </div>
+                    <div class="flex justify-between text-zinc-400">
+                        <span>Store Fitting / Delivery:</span>
+                        <span class="text-amber-400 font-medium">Confirmed on Order</span>
+                    </div>
+                    <div class="pt-2 border-t border-zinc-800 flex justify-between items-center text-base font-bold">
+                        <span class="text-white">Payable Total:</span>
+                        <span id="cartGrandTotalText" class="font-display text-2xl text-amber-400">₹0</span>
+                    </div>
+                </div>
+
+                <button onclick="openCheckoutModal()" class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-racing-600 to-amber-600 hover:from-racing-500 hover:to-amber-500 text-white text-sm font-bold inline-flex items-center justify-center gap-2 shadow-lg shadow-racing-600/25 transition active:scale-95">
+                    <span>Proceed to Checkout</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Checkout & Order Confirmation Modal -->
+    <div id="checkoutModal" class="hidden fixed inset-0 z-50 modal-backdrop flex items-end sm:items-center justify-center p-0 sm:p-4">
+        <div class="bg-carbon-900 border border-zinc-800 w-full sm:max-w-xl rounded-t-3xl sm:rounded-3xl overflow-hidden shadow-2xl max-h-[94vh] flex flex-col">
+            <div class="px-5 py-4 border-b border-zinc-800 flex items-center justify-between bg-carbon-950">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-shield-check text-emerald-400 text-lg"></i>
+                    <h3 id="checkoutModalTitle" class="font-display text-xl font-bold uppercase text-white">Complete Your Order</h3>
+                </div>
+                <button onclick="closeCheckoutModal()" class="w-9 h-9 rounded-xl bg-carbon-800 hover:bg-carbon-700 text-zinc-400 hover:text-white flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Step 1: Checkout Form -->
+            <form id="checkoutFormStep" onsubmit="submitOnlineOrder(event)" class="p-5 overflow-y-auto space-y-4 flex-1">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-zinc-300 mb-1">Full Name *</label>
+                        <input type="text" id="custName" required placeholder="Enter your name" class="w-full px-3.5 py-2.5 bg-carbon-950 border border-zinc-700 focus:border-racing-600 rounded-xl text-sm text-white outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-zinc-300 mb-1">Mobile / WhatsApp Number *</label>
+                        <input type="tel" id="custPhone" required pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number" class="w-full px-3.5 py-2.5 bg-carbon-950 border border-zinc-700 focus:border-racing-600 rounded-xl text-sm text-white outline-none">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-zinc-300 mb-1">Your Car Model & Year *</label>
+                    <input type="text" id="custCarModel" required placeholder="e.g., Maruti Swift 2025 / Tata Punch / Hyundai Creta" class="w-full px-3.5 py-2.5 bg-carbon-950 border border-zinc-700 focus:border-racing-600 rounded-xl text-sm text-white outline-none">
+                </div>
+
+                <!-- Fulfillment Option -->
+                <div class="space-y-2">
+                    <label class="block text-xs font-semibold text-zinc-300">Fulfillment & Payment Method *</label>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <label class="cursor-pointer">
+                            <input type="radio" name="fulfillmentMethod" value="Store Pickup & Installation (Ode Chokdi, Umreth)" checked onchange="toggleAddressField()" class="peer sr-only">
+                            <div class="p-3.5 rounded-2xl bg-carbon-950 border border-zinc-800 peer-checked:border-amber-500 peer-checked:bg-amber-500/10 transition flex items-start gap-3">
+                                <i class="fa-solid fa-store text-amber-400 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs sm:text-sm font-bold text-white">Store Pickup & Installation (Ode Chokdi, Umreth)</p>
+                                    <p class="text-[11px] text-zinc-400 mt-0.5">Pay Cash / UPI at Shop after fitting (Token advance only for custom orders)</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="fulfillmentMethod" value="Home Delivery (Umreth / Kheda / Anand / Gujarat)" onchange="toggleAddressField()" class="peer sr-only">
+                            <div class="p-3.5 rounded-2xl bg-carbon-950 border border-zinc-800 peer-checked:border-racing-600 peer-checked:bg-racing-600/10 transition flex items-start gap-3">
+                                <i class="fa-solid fa-truck-fast text-racing-500 mt-0.5"></i>
+                                <div>
+                                    <p class="text-xs sm:text-sm font-bold text-white">Home Delivery (Umreth / Kheda / Anand / Gujarat)</p>
+                                    <p class="text-[11px] text-zinc-400 mt-0.5">Cash on Delivery (COD) / UPI Advance Token for Special Orders</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Delivery Address (Shown when Home Delivery selected) -->
+                <div id="deliveryAddressBox" class="hidden space-y-3 bg-carbon-950/90 border border-zinc-800 rounded-2xl p-3.5">
+                    <div>
+                        <label class="block text-xs font-semibold text-zinc-300 mb-1">Full Delivery Address (Village / Society / Landmark) *</label>
+                        <textarea id="custAddress" rows="2" placeholder="House/Shop No, Street, Town/City..." class="w-full px-3 py-2 bg-carbon-900 border border-zinc-700 rounded-xl text-xs sm:text-sm text-white outline-none"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-zinc-300 mb-1">Pincode *</label>
+                        <input type="text" id="custPincode" maxlength="6" placeholder="e.g., 388220" class="w-full px-3 py-2 bg-carbon-900 border border-zinc-700 rounded-xl text-xs sm:text-sm text-white outline-none">
+                    </div>
+                </div>
+
+                <!-- Order Summary Strip -->
+                <div class="bg-carbon-950 border border-zinc-800 rounded-2xl p-3.5 flex items-center justify-between">
+                    <div>
+                        <p class="text-xs text-zinc-400">Order Total (<span id="checkoutItemCount">0</span> items)</p>
+                        <p class="text-[11px] text-amber-400">Pay via Cash / UPI at Shop or COD</p>
+                    </div>
+                    <p id="checkoutTotalAmount" class="font-display text-2xl font-bold text-white">₹0</p>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-racing-600 to-amber-600 hover:from-racing-500 hover:to-amber-500 text-white text-sm font-bold shadow-lg shadow-racing-600/25 transition active:scale-95">
+                    Place Order Now
+                </button>
+            </form>
+
+            <!-- Step 2: Order Confirmation & Invoice Screen -->
+            <div id="orderConfirmationStep" class="hidden p-5 overflow-y-auto space-y-4 flex-1">
+                <div id="printableInvoiceArea" class="bg-carbon-950 border border-zinc-800 rounded-2xl p-4 sm:p-5 space-y-3">
+                    <div class="flex items-center justify-between border-b border-zinc-800 pb-3">
+                        <div>
+                            <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[11px] font-bold">
+                                <i class="fa-solid fa-circle-check mr-1"></i>Order Confirmed
+                            </span>
+                            <h4 class="font-display text-2xl font-bold text-white mt-1">CAR FASHION HUB</h4>
+                            <p class="text-[11px] text-zinc-400">Ode Chokdi, Umreth, Gujarat • +91 76008 61847</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-[11px] text-zinc-400">Order ID</p>
+                            <p id="confirmedOrderId" class="font-display text-xl font-bold text-amber-400">#CFH-1001</p>
+                            <p id="confirmedOrderDate" class="text-[10px] text-zinc-500"></p>
+                        </div>
+                    </div>
+
+                    <div id="confirmedCustomerDetails" class="text-xs text-zinc-300 space-y-1 bg-carbon-900/90 p-3 rounded-xl border border-zinc-800/80">
+                        <!-- Populated dynamically -->
+                    </div>
+
+                    <div id="confirmedItemsList" class="space-y-2 text-xs">
+                        <!-- Populated dynamically -->
+                    </div>
+
+                    <div class="border-t border-zinc-800 pt-2.5 flex justify-between items-center font-bold">
+                        <span class="text-xs text-zinc-300">Grand Total Payable:</span>
+                        <span id="confirmedGrandTotal" class="font-display text-2xl text-amber-400">₹0</span>
+                    </div>
+                </div>
+
+                <div class="space-y-2.5">
+                    <button onclick="sendConfirmedOrderToWhatsApp()" class="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold inline-flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/25 transition active:scale-95">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Confirm & Send Order on WhatsApp (7600861847)</span>
+                    </button>
+                    <div class="grid grid-cols-2 gap-2.5">
+                        <button onclick="window.print()" class="py-2.5 px-3 rounded-xl bg-carbon-800 hover:bg-carbon-700 border border-zinc-700 text-zinc-200 text-xs font-semibold inline-flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-print text-amber-400"></i> Print / Save Invoice
+                        </button>
+                        <button onclick="closeCheckoutModal()" class="py-2.5 px-3 rounded-xl bg-carbon-800 hover:bg-carbon-700 border border-zinc-700 text-zinc-200 text-xs font-semibold">
+                            Continue Shopping
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Seller Admin PIN Modal -->
+    <div id="sellerPinModal" class="hidden fixed inset-0 z-50 modal-backdrop flex items-center justify-center p-4">
+        <div class="bg-carbon-900 border border-zinc-800 w-full max-w-sm rounded-3xl p-6 shadow-2xl">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl mx-auto mb-3">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-center uppercase text-white">Seller Admin Login</h3>
+            <p class="text-xs text-zinc-400 text-center mt-1 mb-5">
+                Manage online orders, prices & product photos.<br>
+                <span class="text-amber-400 font-semibold">(Owner PIN: 1234)</span>
+            </p>
+            <form onsubmit="verifySellerPin(event)" class="space-y-4">
+                <input type="password" id="sellerPinInput" inputmode="numeric" maxlength="6" placeholder="••••" required class="w-full text-center tracking-[0.5em] text-2xl font-bold py-3 bg-carbon-950 border border-zinc-700 focus:border-amber-500 rounded-xl text-white outline-none">
+                <p id="sellerPinError" class="hidden text-xs text-racing-500 text-center font-semibold">Incorrect PIN! Use 1234.</p>
+                <div class="flex gap-2.5">
+                    <button type="button" onclick="closeSellerPinModal()" class="flex-1 py-2.5 rounded-xl bg-carbon-800 text-zinc-300 text-sm font-semibold">Cancel</button>
+                    <button type="submit" class="flex-1 py-2.5 rounded-xl bg-gradient-to-r from-racing-600 to-amber-600 text-white text-sm font-bold">Open Dashboard</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 5. Seller Admin Dashboard Modal (Tab 1: Orders Received, Tab 2: Manage Products) -->
+    <div id="sellerDashboardModal" class="hidden fixed inset-0 z-50 modal-backdrop flex items-end sm:items-center justify-center p-0 sm:p-4">
+        <div class="bg-carbon-900 border border-zinc-800 w-full sm:max-w-4xl rounded-t-3xl sm:rounded-3xl overflow-hidden shadow-2xl max-h-[94vh] flex flex-col">
+            <!-- Top Bar -->
+            <div class="px-5 py-4 border-b border-zinc-800 flex items-center justify-between bg-carbon-950">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-xl font-bold uppercase text-white">Car Fashion Hub — Seller Admin</h3>
+                        <p class="text-[11px] text-zinc-400">Manage customer orders & online catalog</p>
+                    </div>
+                </div>
+                <button onclick="closeSellerDashboard()" class="w-9 h-9 rounded-xl bg-carbon-800 hover:bg-carbon-700 text-zinc-400 hover:text-white flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="px-5 pt-3 bg-carbon-950/60 border-b border-zinc-800 flex items-center gap-3">
+                <button id="tabBtnOrders" onclick="switchAdminTab('orders')" class="pb-3 px-2 border-b-2 border-racing-600 text-xs sm:text-sm font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-receipt text-amber-400"></i>
+                    <span>Orders Received</span>
+                    <span id="adminOrdersBadge" class="px-2 py-0.5 rounded-full bg-racing-600 text-white text-[10px]">0</span>
+                </button>
+                <button id="tabBtnProducts" onclick="switchAdminTab('products')" class="pb-3 px-2 border-b-2 border-transparent text-xs sm:text-sm font-semibold text-zinc-400 hover:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-boxes-stacked text-racing-500"></i>
+                    <span>Manage Products</span>
+                </button>
+            </div>
+
+            <!-- TAB 1: ORDERS RECEIVED -->
+            <div id="adminTabOrders" class="p-5 overflow-y-auto flex-1 space-y-3">
+                <!-- Rendered via JS -->
+            </div>
+
+            <!-- TAB 2: MANAGE PRODUCTS -->
+            <div id="adminTabProducts" class="hidden p-5 overflow-y-auto flex-1 space-y-5">
+                <!-- Add / Edit Product Form Card -->
+                <div class="bg-carbon-950 border border-zinc-800 rounded-2xl p-4">
+                    <div class="flex items-center justify-between mb-3">
+                        <h4 id="adminFormHeading" class="text-sm font-bold text-amber-400 uppercase tracking-wider">
+                            <i class="fa-solid fa-plus-circle mr-1"></i> Add New Car Accessory
+                        </h4>
+                        <button type="button" id="cancelEditProdBtn" onclick="resetAdminProductForm()" class="hidden text-xs text-zinc-400 hover:text-white underline">
+                            Cancel Edit
+                        </button>
+                    </div>
+                    <form id="adminProductForm" onsubmit="saveAdminProduct(event)" class="space-y-3">
+                        <input type="hidden" id="adminProdId">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-[11px] font-semibold text-zinc-400 mb-1">Product Name *</label>
+                                <input type="text" id="adminProdName" required placeholder="e.g., 9-inch TS10 Android Stereo" class="w-full px-3 py-2 bg-carbon-900 border border-zinc-700 rounded-xl text-xs sm:text-sm text-white outline-none focus:border-racing-600">
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-semibold text-zinc-400 mb-1">Category *</label>
+                                <select id="adminProdCategory" required class="w-full px-3 py-2 bg-carbon-900 border border-zinc-700 rounded-xl text-xs sm:text-sm text-white outline-none focus:border-racing-600">
+                                    <option value="Seat Covers">Seat Covers</option>
+                                    <option value="Android Screens & Audio">Android Screens & Audio</option>
+                                    <option value="LED Headlights & Fog Lamps">LED Headlights & Fog Lamps</option>
+                                    <option value="Dashcams & Cameras">Dashcams & Cameras</option>
+                                    <option value="Floor Mats">Floor Mats</option>
+                                    <option value="Exterior & Spoilers">Exterior & Spoilers</option>
+                                    <option value="Interior Styling">Interior Styling</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            <div>
+                                <label class="block text-[11px] font-semibold text-zinc-400 mb-1">Selling Price (₹) *</label>
+                                <input type="number" id="adminProdPrice" required min="1" placeholder="6500" class="w-full px-3 py-2 bg-carbon-900 border border-zinc-700 rounded-xl text-xs sm:text-sm text-white outline-none focus:border-racing-600">
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-semibold text-zinc-400 mb-1">MRP (₹) *</label>
+                                <input type="number" id="adminProdMrp" required min="1" placeholder="8500" class="w-full px-3 py-2 bg-carbon-900 border border-zinc-700 rounded-xl text-xs sm:text-sm text-white outline-none focus:border-racing-600">
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-semibold text-zinc-400 mb-1">Stock Status</label>
+                                <select id="adminProdStock" class="w-full px-3 py-2 bg-carbon-900 border border-zinc-700 rounded-xl text-xs sm:text-sm text-white outline-none">
+                                    <option value="In Stock">In Stock</option>
+                                    <option value="Limited Stock">Limited Stock</option>
+                                    <option value="Special Order (Token)">Special Order (Token)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-semibold text-zinc-400 mb-1">Warranty</label>
+                                <input type="text" id="adminProdWarranty" value="1 Year Warranty" class="w-full px-3 py-2 bg-carbon-900 border border-zinc-700 rounded-xl text-xs sm:text-sm text-white outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-[11px] font-semibold text-zinc-400 mb-1">Car Compatibility *</label>
+                                <input type="text" id="adminProdCars" required placeholder="e.g., Swift, Punch, Altroz, Creta, Universal" class="w-full px-3 py-2 bg-carbon-900 border border-zinc-700 rounded-xl text-xs sm:text-sm text-white outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-semibold text-zinc-400 mb-1">Upload Photo from Phone Gallery</label>
+                                <label class="cursor-pointer flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-carbon-800 hover:bg-carbon-700 border border-dashed border-zinc-600 text-xs font-semibold text-amber-400">
+                                    <i class="fa-solid fa-camera"></i>
+                                    <span id="adminPhotoLabel">Choose Photo (or keep default SVG)</span>
+                                    <input type="file" id="adminProdFile" accept="image/*" onchange="handleAdminPhotoUpload(event)" class="hidden">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-[11px] font-semibold text-zinc-400 mb-1">Product Specifications *</label>
+                            <textarea id="adminProdSpecs" rows="2" required placeholder="Enter key features, socket type, fitting details..." class="w-full px-3 py-2 bg-carbon-900 border border-zinc-700 rounded-xl text-xs sm:text-sm text-white outline-none"></textarea>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-1">
+                            <button type="button" onclick="resetCatalogToDefaults()" class="text-xs text-zinc-400 hover:text-racing-500 underline">
+                                Restore Default 12 Items
+                            </button>
+                            <button type="submit" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-racing-600 to-amber-600 text-white text-xs sm:text-sm font-bold shadow-lg">
+                                Save Product to Store
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Existing Inventory List -->
+                <div class="space-y-2.5">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400">Current Store Inventory</h4>
+                    <div id="adminInventoryList" class="space-y-2.5">
+                        <!-- Rendered via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toastBanner" class="fixed top-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-all duration-300 -translate-y-2">
+        <div class="bg-carbon-800 border border-zinc-700 text-white px-4 py-2.5 rounded-2xl shadow-2xl flex items-center gap-2 text-xs sm:text-sm font-semibold">
+            <i id="toastIcon" class="fa-solid fa-circle-check text-emerald-400"></i>
+            <span id="toastText">Added to cart!</span>
+        </div>
+    </div>
+
+    <script>
+        // ==================== CONSTANTS & SVG ILLUSTRATIONS ====================
+        const SHOP_WHATSAPP = "917600861847";
+        const SELLER_PIN = "1234";
+        const KEY_PRODUCTS = "cfh_store_products_v2";
+        const KEY_CART = "cfh_store_cart_v2";
+        const KEY_ORDERS = "cfh_store_orders_v2";
+
+        const CAR_MODELS = [
+            "All Cars", "Swift", "Punch", "Altroz", "Creta", "Nexon", "Bolero / Scorpio", "Universal"
+        ];
+
+        const CATEGORIES = [
+            { id: "All", label: "All", icon: "fa-border-all" },
+            { id: "Seat Covers", label: "Seat Covers", icon: "fa-couch" },
+            { id: "Android Screens & Audio", label: "Android Screens & Audio", icon: "fa-tv" },
+            { id: "LED Headlights & Fog Lamps", label: "LED Headlights & Fog Lamps", icon: "fa-lightbulb" },
+            { id: "Dashcams & Cameras", label: "Dashcams & Cameras", icon: "fa-video" },
+            { id: "Floor Mats", label: "Floor Mats", icon: "fa-layer-group" },
+            { id: "Exterior & Spoilers", label: "Exterior & Spoilers", icon: "fa-car-side" },
+            { id: "Interior Styling", label: "Interior Styling", icon: "fa-sparkles" }
+        ];
+
+        // Crisp Custom Vector SVG Art for Each Category
+        function getCategorySvg(category) {
+            const svgs = {
+                "Seat Covers": `
+                    <svg viewBox="0 0 120 120" class="w-24 h-24">
+                        <defs>
+                            <linearGradient id="seatGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#e11d48"/>
+                                <stop offset="100%" stop-color="#9f1239"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="44" y="12" width="32" height="16" rx="6" fill="#242933" stroke="#f59e0b" stroke-width="2.5"/>
+                        <path d="M36 32C36 27 40 24 45 24H75C80 24 84 27 84 32L88 74H32L36 32Z" fill="url(#seatGrad)" stroke="#fda4af" stroke-width="2"/>
+                        <path d="M46 34V66M74 34V66" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 3"/>
+                        <rect x="28" y="74" width="64" height="22" rx="8" fill="#181b20" stroke="#e11d48" stroke-width="2.5"/>
+                        <path d="M38 85H82" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+                    </svg>`,
+                "Android Screens & Audio": `
+                    <svg viewBox="0 0 120 120" class="w-24 h-24">
+                        <rect x="16" y="24" width="88" height="62" rx="10" fill="#181b20" stroke="#e11d48" stroke-width="3"/>
+                        <rect x="24" y="31" width="72" height="48" rx="5" fill="#0f1115" stroke="#f59e0b" stroke-width="1.5"/>
+                        <circle cx="42" cy="55" r="10" fill="#e11d48" fill-opacity="0.25" stroke="#e11d48" stroke-width="2"/>
+                        <polygon points="40,51 40,59 47,55" fill="#f59e0b"/>
+                        <rect x="60" y="45" width="28" height="4" rx="2" fill="#f59e0b"/>
+                        <rect x="60" y="54" width="22" height="4" rx="2" fill="#71717a"/>
+                        <rect x="60" y="63" width="26" height="4" rx="2" fill="#e11d48"/>
+                        <path d="M42 94H78" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+                    </svg>`,
+                "LED Headlights & Fog Lamps": `
+                    <svg viewBox="0 0 120 120" class="w-24 h-24">
+                        <circle cx="52" cy="60" r="26" fill="#181b20" stroke="#f59e0b" stroke-width="3"/>
+                        <circle cx="52" cy="60" r="14" fill="#fef08a" stroke="#e11d48" stroke-width="2.5"/>
+                        <path d="M84 42L106 32M86 60H110M84 78L106 88" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round"/>
+                        <rect x="16" y="50" width="12" height="20" rx="3" fill="#e11d48"/>
+                    </svg>`,
+                "Dashcams & Cameras": `
+                    <svg viewBox="0 0 120 120" class="w-24 h-24">
+                        <path d="M48 22H72L66 36H54L48 22Z" fill="#e11d48"/>
+                        <rect x="24" y="36" width="72" height="46" rx="12" fill="#181b20" stroke="#f59e0b" stroke-width="2.5"/>
+                        <circle cx="60" cy="59" r="16" fill="#0f1115" stroke="#e11d48" stroke-width="3"/>
+                        <circle cx="60" cy="59" r="7" fill="#38bdf8"/>
+                        <circle cx="84" cy="45" r="3" fill="#ef4444"/>
+                    </svg>`,
+                "Floor Mats": `
+                    <svg viewBox="0 0 120 120" class="w-24 h-24">
+                        <path d="M34 20H78L88 44V96C88 100 84 102 80 102H36C32 102 28 98 28 94V26C28 22 31 20 34 20Z" fill="#181b20" stroke="#e11d48" stroke-width="3"/>
+                        <path d="M40 34H74M38 48H78M38 62H78M38 76H78M38 90H78" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>`,
+                "Exterior & Spoilers": `
+                    <svg viewBox="0 0 120 120" class="w-24 h-24">
+                        <path d="M16 70C28 48 54 42 96 46L104 36L108 50C90 58 64 62 24 76L16 70Z" fill="#e11d48" stroke="#f59e0b" stroke-width="2.5"/>
+                        <path d="M26 84H94" stroke="#71717a" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4"/>
+                    </svg>`,
+                "Interior Styling": `
+                    <svg viewBox="0 0 120 120" class="w-24 h-24">
+                        <rect x="20" y="42" width="80" height="36" rx="10" fill="#181b20" stroke="#f59e0b" stroke-width="2.5"/>
+                        <rect x="30" y="54" width="60" height="12" rx="4" fill="#e11d48" fill-opacity="0.25" stroke="#e11d48" stroke-width="2"/>
+                        <path d="M38 60H82" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+                    </svg>`
+            };
+            return svgs[category] || svgs["Exterior & Spoilers"];
+        }
+
+        // ==================== PRE-LOADED 12 PRODUCTS CATALOG ====================
+        const DEFAULT_PRODUCTS = [
+            {
+                id: "prod-1",
+                name: "Nappa Leather Custom Bucket Seat Covers",
+                category: "Seat Covers",
+                price: 6500,
+                mrp: 8500,
+                stock: "In Stock",
+                warranty: "2 Year Warranty",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "Ultra-soft automotive Nappa leatherette with high-density foam cushioning, diamond/sport stitching, airbag-compatible seams & exact bucket fitment.",
+                image: ""
+            },
+            {
+                id: "prod-2",
+                name: "PU Leather Universal Fit Seat Covers",
+                category: "Seat Covers",
+                price: 3800,
+                mrp: 4800,
+                stock: "In Stock",
+                warranty: "1 Year Warranty",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "Durable water-resistant PU leather seat cover full set (front + rear) with breathable perforated center panels and easy-clean finish.",
+                image: ""
+            },
+            {
+                id: "prod-3",
+                name: "TS10 9-inch QLED Android Touchscreen (4GB/64GB + CANBUS)",
+                category: "Android Screens & Audio",
+                price: 11500,
+                mrp: 14999,
+                stock: "In Stock",
+                warranty: "1 Year Warranty",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "Octa-Core TS10 processor, 4GB RAM + 64GB ROM, QLED Gorilla Glass display, Wireless Apple CarPlay & Android Auto, 32-band DSP & OEM CANBUS support.",
+                image: ""
+            },
+            {
+                id: "prod-4",
+                name: "TS7 9-inch IPS Android Car Player (2GB/32GB)",
+                category: "Android Screens & Audio",
+                price: 6800,
+                mrp: 8500,
+                stock: "In Stock",
+                warranty: "1 Year Warranty",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "9-inch HD IPS capacitive touchscreen, 2GB RAM + 32GB storage, MirrorLink, Bluetooth hands-free calling, steering control & reverse camera input.",
+                image: ""
+            },
+            {
+                id: "prod-5",
+                name: "120W High-Power LED Headlight Bulbs (H4/H7/H11/H1/HB3)",
+                category: "LED Headlights & Fog Lamps",
+                price: 2800,
+                mrp: 3600,
+                stock: "In Stock",
+                warranty: "1 Year Replacement",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "120W pair output, 6000K pure crystal white beam, dual copper heat-pipe with high-speed turbo fan, IP68 waterproof & plug-and-play coupler.",
+                image: ""
+            },
+            {
+                id: "prod-6",
+                name: "Bi-LED Projector Fog Lamps (3-Inch)",
+                category: "LED Headlights & Fog Lamps",
+                price: 3400,
+                mrp: 4200,
+                stock: "In Stock",
+                warranty: "1 Year Warranty",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "3-inch heavy-duty aluminum housing with dual low/high beam solenoid cutoff. Massive highway & monsoon visibility upgrade with direct brackets.",
+                image: ""
+            },
+            {
+                id: "prod-7",
+                name: "12-inch Active Bass Tube Subwoofer with Built-in Amp",
+                category: "Android Screens & Audio",
+                price: 4900,
+                mrp: 6200,
+                stock: "In Stock",
+                warranty: "1 Year Warranty",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "12-inch high-excursion woofer in ported acoustic cylinder enclosure with built-in Mosfet amplifier, bass boost controller & pure copper wiring support.",
+                image: ""
+            },
+            {
+                id: "prod-8",
+                name: "Full HD 1080p Dual Dashcam (Front + Cabin/Rear)",
+                category: "Dashcams & Cameras",
+                price: 3900,
+                mrp: 4999,
+                stock: "In Stock",
+                warranty: "1 Year Warranty",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "1080p Front + Rear/Cabin dual recording, Sony Starvis night vision sensor, 24H parking monitor, G-Sensor accident lock & mobile Wi-Fi app.",
+                image: ""
+            },
+            {
+                id: "prod-9",
+                name: "AHD Night Vision Reverse Parking Camera",
+                category: "Dashcams & Cameras",
+                price: 1100,
+                mrp: 1500,
+                stock: "In Stock",
+                warranty: "1 Year Warranty",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "170° ultra-wide fish-eye lens, low-light color night vision, IP68 waterproof metal body & moving/static parking distance guidelines.",
+                image: ""
+            },
+            {
+                id: "prod-10",
+                name: "Gozo 7D Luxury Custom Floor Mats",
+                category: "Floor Mats",
+                price: 2400,
+                mrp: 3200,
+                stock: "In Stock",
+                warranty: "1 Year Warranty",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "Laser-measured edge-to-edge bucket tray with detachable curly/grass top layer. 100% waterproof, dustproof & anti-slip heel pad.",
+                image: ""
+            },
+            {
+                id: "prod-11",
+                name: "ABS Gloss Black Rear Roof Spoiler",
+                category: "Exterior & Spoilers",
+                price: 1800,
+                mrp: 2400,
+                stock: "In Stock",
+                warranty: "6 Months Warranty",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "Aerodynamic sporty design crafted from virgin ABS plastic in piano gloss black finish. Zero-drill installation with heavy-duty 3M VHB tape.",
+                image: ""
+            },
+            {
+                id: "prod-12",
+                name: "Illuminated LED Door Sill Scuff Plates (Set of 4)",
+                category: "Interior Styling",
+                price: 950,
+                mrp: 1400,
+                stock: "In Stock",
+                warranty: "6 Months Warranty",
+                cars: "Swift, Punch, Altroz, Creta, Nexon, Bolero / Scorpio, Universal",
+                specs: "Brushed stainless steel 4-piece set with glowing Ice-Blue / Red LED car model logo. Protects door sills from shoe scratches.",
+                image: ""
+            }
+        ];
+
+        // ==================== STATE ====================
+        let products = [];
+        let cart = []; // [{ cartKey, productId, qty, installOption }]
+        let orders = [];
+        let selectedCarModel = "All Cars";
+        let selectedCategory = "All";
+        let searchQuery = "";
+        let activeDetailProduct = null;
+        let detailQty = 1;
+        let lastConfirmedOrder = null;
+        let adminUploadedPhotoBase64 = "";
+
+        // ==================== INITIALIZATION ====================
+        window.addEventListener("DOMContentLoaded", () => {
+            loadAllFromStorage();
+            renderCarModelPills();
+            renderCategoryPills();
+            renderProductGrid();
+            updateCartBadgesAndTotals();
+        });
+
+        function loadAllFromStorage() {
+            try {
+                const storedProducts = localStorage.getItem(KEY_PRODUCTS);
+                products = storedProducts ? JSON.parse(storedProducts) : [...DEFAULT_PRODUCTS];
+                if (!storedProducts) saveProducts();
+
+                const storedCart = localStorage.getItem(KEY_CART);
+                cart = storedCart ? JSON.parse(storedCart) : [];
+
+                const storedOrders = localStorage.getItem(KEY_ORDERS);
+                orders = storedOrders ? JSON.parse(storedOrders) : [];
+            } catch (err) {
+                console.error(err);
+                products = [...DEFAULT_PRODUCTS];
+            }
+        }
+
+        function saveProducts() {
+            try {
+                localStorage.setItem(KEY_PRODUCTS, JSON.stringify(products));
+            } catch (e) {
+                showToast("Storage limit reached! Use smaller product images.", "error");
+            }
+        }
+
+        function saveCart() {
+            localStorage.setItem(KEY_CART, JSON.stringify(cart));
+        }
+
+        function saveOrders() {
+            localStorage.setItem(KEY_ORDERS, JSON.stringify(orders));
+        }
+
+        // ==================== FILTERS & SEARCH ====================
+        function renderCarModelPills() {
+            const container = document.getElementById("carModelPills");
+            container.innerHTML = CAR_MODELS.map(car => {
+                const active = selectedCarModel === car;
+                return `
+                    <button onclick="selectCarModel('${car}')" class="flex-shrink-0 px-3 py-1 rounded-full text-[11px] font-semibold border transition ${
+                        active 
+                        ? 'bg-amber-500 text-carbon-950 border-amber-400 shadow-sm' 
+                        : 'bg-carbon-800 hover:bg-carbon-700 text-zinc-300 border-zinc-700/80'
+                    }">
+                        ${car}
+                    </button>
+                `;
+            }).join("");
+        }
+
+        function selectCarModel(car) {
+            selectedCarModel = car;
+            renderCarModelPills();
+            renderProductGrid();
+        }
+
+        function renderCategoryPills() {
+            const container = document.getElementById("categoryPills");
+            container.innerHTML = CATEGORIES.map(cat => {
+                const active = selectedCategory === cat.id;
+                return `
+                    <button onclick="selectCategory('${cat.id}')" class="flex-shrink-0 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold border transition ${
+                        active 
+                        ? 'bg-racing-600 text-white border-racing-500 shadow-md shadow-racing-600/20' 
+                        : 'bg-carbon-800 hover:bg-carbon-700 text-zinc-300 border-zinc-800'
+                    }">
+                        <i class="fa-solid ${cat.icon} ${active ? 'text-white' : 'text-racing-500'}"></i>
+                        <span>${cat.label}</span>
+                    </button>
+                `;
+            }).join("");
+        }
+
+        function selectCategory(catId) {
+            selectedCategory = catId;
+            renderCategoryPills();
+            renderProductGrid();
+        }
+
+        function handleSearchInput() {
+            searchQuery = document.getElementById("searchInput").value.trim().toLowerCase();
+            document.getElementById("clearSearchBtn").classList.toggle("hidden", !searchQuery);
+            renderProductGrid();
+        }
+
+        function clearSearch() {
+            document.getElementById("searchInput").value = "";
+            searchQuery = "";
+            document.getElementById("clearSearchBtn").classList.add("hidden");
+            renderProductGrid();
+        }
+
+        function resetAllFilters() {
+            selectedCarModel = "All Cars";
+            selectedCategory = "All";
+            clearSearch();
+            renderCarModelPills();
+            renderCategoryPills();
+            renderProductGrid();
+        }
+
+        // ==================== PRODUCT CATALOG RENDERING ====================
+        function formatINR(num) {
+            return Number(num).toLocaleString("en-IN");
+        }
+
+        function calcDiscountPercent(price, mrp) {
+            if (!mrp || mrp <= price) return 0;
+            return Math.round(((mrp - price) / mrp) * 100);
+        }
+
+        function renderProductGrid() {
+            const grid = document.getElementById("productGrid");
+            const emptyState = document.getElementById("emptyState");
+            const heading = document.getElementById("catalogHeading");
+            const subheading = document.getElementById("catalogSubheading");
+            const sortBy = document.getElementById("sortSelect").value;
+
+            let filtered = products.filter(p => {
+                const matchCat = selectedCategory === "All" || p.category === selectedCategory;
+                const matchCar = selectedCarModel === "All Cars" || 
+                    p.cars.toLowerCase().includes(selectedCarModel.toLowerCase()) ||
+                    p.cars.toLowerCase().includes("universal");
+                const matchSearch = !searchQuery ||
+                    p.name.toLowerCase().includes(searchQuery) ||
+                    p.category.toLowerCase().includes(searchQuery) ||
+                    p.specs.toLowerCase().includes(searchQuery) ||
+                    p.cars.toLowerCase().includes(searchQuery);
+                return matchCat && matchCar && matchSearch;
+            });
+
+            if (sortBy === "price-low") {
+                filtered.sort((a, b) => a.price - b.price);
+            } else if (sortBy === "price-high") {
+                filtered.sort((a, b) => b.price - a.price);
+            } else if (sortBy === "discount") {
+                filtered.sort((a, b) => calcDiscountPercent(b.price, b.mrp) - calcDiscountPercent(a.price, a.mrp));
+            }
+
+            heading.textContent = selectedCategory === "All" ? "All Car Accessories" : selectedCategory;
+            subheading.textContent = `Showing ${filtered.length} product${filtered.length === 1 ? '' : 's'} ${selectedCarModel !== 'All Cars' ? 'for ' + selectedCarModel : ''}`;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = "";
+                emptyState.classList.remove("hidden");
+                return;
+            }
+
+            emptyState.classList.add("hidden");
+
+            grid.innerHTML = filtered.map(prod => {
+                const discount = calcDiscountPercent(prod.price, prod.mrp);
+                return `
+                    <article class="product-card bg-carbon-900 border border-zinc-800 rounded-2xl overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <!-- Clickable Product Image / SVG Area -->
+                            <div onclick="openProductDetailModal('${prod.id}')" class="relative h-44 bg-gradient-to-br from-carbon-800 via-carbon-900 to-carbon-950 border-b border-zinc-800 flex items-center justify-center p-4 cursor-pointer overflow-hidden group">
+                                ${prod.image ? `
+                                    <img src="${prod.image}" alt="${escapeHtml(prod.name)}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                                    <div style="display:none;" class="flex items-center justify-center">${getCategorySvg(prod.category)}</div>
+                                ` : `
+                                    <div class="group-hover:scale-105 transition duration-300">
+                                        ${getCategorySvg(prod.category)}
+                                    </div>
+                                `}
+
+                                <!-- Discount Badge -->
+                                ${discount > 0 ? `
+                                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-racing-600 text-white text-[11px] font-extrabold shadow-md">
+                                        ${discount}% OFF
+                                    </span>
+                                ` : ''}
+
+                                <!-- Stock Status Pill -->
+                                <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-carbon-950/90 border border-zinc-700 text-[10px] font-semibold ${
+                                    prod.stock === 'In Stock' ? 'text-emerald-400' : 'text-amber-400'
+                                }">
+                                    ${escapeHtml(prod.stock || 'In Stock')}
+                                </span>
+
+                                <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-carbon-950/80 text-[10px] text-zinc-300 border border-zinc-800">
+                                    Tap for Specs <i class="fa-solid fa-up-right-from-square text-[9px] ml-0.5"></i>
+                                </span>
+                            </div>
+
+                            <!-- Card Details -->
+                            <div class="p-4">
+                                <p class="text-[10px] font-bold uppercase tracking-wider text-racing-500 mb-1">
+                                    ${escapeHtml(prod.category)}
+                                </p>
+                                <h4 onclick="openProductDetailModal('${prod.id}')" class="text-sm sm:text-base font-bold text-white leading-snug cursor-pointer hover:text-amber-400 transition line-clamp-2">
+                                    ${escapeHtml(prod.name)}
+                                </h4>
+
+                                <!-- Pricing -->
+                                <div class="mt-2 flex items-baseline gap-2">
+                                    <span class="font-display text-2xl font-bold text-amber-400">₹${formatINR(prod.price)}</span>
+                                    ${prod.mrp > prod.price ? `<span class="text-xs text-zinc-500 line-through">₹${formatINR(prod.mrp)}</span>` : ''}
+                                </div>
+
+                                <p class="text-[11px] text-zinc-400 mt-1.5 line-clamp-2 leading-relaxed">
+                                    ${escapeHtml(prod.specs)}
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Add to Cart / Buy Buttons -->
+                        <div class="px-4 pb-4 pt-1 grid grid-cols-2 gap-2">
+                            <button onclick="quickAddToCart('${prod.id}', false)" class="py-2.5 px-3 rounded-xl bg-carbon-800 hover:bg-carbon-700 border border-zinc-700 text-white text-xs font-bold inline-flex items-center justify-center gap-1.5 transition active:scale-95">
+                                <i class="fa-solid fa-cart-plus text-amber-400"></i>
+                                <span>Add Cart</span>
+                            </button>
+                            <button onclick="quickAddToCart('${prod.id}', true)" class="py-2.5 px-3 rounded-xl bg-racing-600 hover:bg-racing-500 text-white text-xs font-bold inline-flex items-center justify-center gap-1.5 shadow-md shadow-racing-600/20 transition active:scale-95">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                    </article>
+                `;
+            }).join("");
+        }
+
+        // ==================== PRODUCT DETAIL MODAL ====================
+        function openProductDetailModal(productId) {
+            const prod = products.find(p => p.id === productId);
+            if (!prod) return;
+            activeDetailProduct = prod;
+            detailQty = 1;
+
+            document.getElementById("detailCategoryBadge").textContent = prod.category;
+            document.getElementById("detailStockBadge").textContent = prod.stock || "In Stock";
+            document.getElementById("detailWarrantyBadge").textContent = prod.warranty || "1 Year Warranty";
+            document.getElementById("detailTitle").textContent = prod.name;
+            document.getElementById("detailPrice").textContent = `₹${formatINR(prod.price)}`;
+            document.getElementById("detailMrp").textContent = prod.mrp > prod.price ? `₹${formatINR(prod.mrp)}` : "";
+            
+            const disc = calcDiscountPercent(prod.price, prod.mrp);
+            const discEl = document.getElementById("detailDiscount");
+            discEl.textContent = `${disc}% OFF`;
+            discEl.classList.toggle("hidden", disc <= 0);
+
+            document.getElementById("detailCars").textContent = prod.cars;
+            document.getElementById("detailSpecs").textContent = prod.specs;
+            document.getElementById("detailQtyValue").textContent = "1";
+
+            const visualBox = document.getElementById("detailVisualBox");
+            if (prod.image) {
+                visualBox.innerHTML = `<img src="${prod.image}" alt="${escapeHtml(prod.name)}" class="w-full h-full object-cover rounded-xl">`;
+            } else {
+                visualBox.innerHTML = getCategorySvg(prod.category);
+            }
+
+            document.getElementById("productDetailModal").classList.remove("hidden");
+        }
+
+        function closeProductDetailModal() {
+            document.getElementById("productDetailModal").classList.add("hidden");
+        }
+
+        function changeDetailQty(delta) {
+            detailQty = Math.max(1, detailQty + delta);
+            document.getElementById("detailQtyValue").textContent = detailQty;
+        }
+
+        function addFromDetailModal(goToCheckout) {
+            if (!activeDetailProduct) return;
+            const installRadio = document.querySelector('input[name="detailInstallOption"]:checked');
+            const installOption = installRadio ? installRadio.value : "Product Only (Delivery / Pickup)";
+            
+            addItemToCart(activeDetailProduct.id, detailQty, installOption);
+            closeProductDetailModal();
+
+            if (goToCheckout) {
+                openCheckoutModal();
+            } else {
+                showToast(`Added ${detailQty}x to your cart!`);
+            }
+        }
+
+        // ==================== SHOPPING CART LOGIC ====================
+        function quickAddToCart(productId, goToCheckout) {
+            addItemToCart(productId, 1, "Product Only (Delivery / Pickup)");
+            if (goToCheckout) {
+                openCheckoutModal();
+            } else {
+                showToast("Added to Shopping Cart!");
+            }
+        }
+
+        function addItemToCart(productId, qty, installOption) {
+            const cartKey = `${productId}__${installOption}`;
+            const existing = cart.find(item => item.cartKey === cartKey);
+            if (existing) {
+                existing.qty += qty;
+            } else {
+                cart.push({ cartKey, productId, qty, installOption });
+            }
+            saveCart();
+            updateCartBadgesAndTotals();
+        }
+
+        function updateCartItemQty(cartKey, delta) {
+            const index = cart.findIndex(item => item.cartKey === cartKey);
+            if (index === -1) return;
+            cart[index].qty += delta;
+            if (cart[index].qty <= 0) {
+                cart.splice(index, 1);
+            }
+            saveCart();
+            updateCartBadgesAndTotals();
+            renderCartDrawerItems();
+        }
+
+        function removeCartItem(cartKey) {
+            cart = cart.filter(item => item.cartKey !== cartKey);
+            saveCart();
+            updateCartBadgesAndTotals();
+            renderCartDrawerItems();
+        }
+
+        function getCartSummary() {
+            let totalQty = 0;
+            let subtotal = 0;
+            let totalMrp = 0;
+
+            cart.forEach(item => {
+                const prod = products.find(p => p.id === item.productId);
+                if (prod) {
+                    totalQty += item.qty;
+                    subtotal += prod.price * item.qty;
+                    totalMrp += (prod.mrp || prod.price) * item.qty;
+                }
+            });
+
+            return {
+                totalQty,
+                subtotal,
+                savings: Math.max(0, totalMrp - subtotal)
+            };
+        }
+
+        function updateCartBadgesAndTotals() {
+            // Remove items whose product might have been deleted
+            cart = cart.filter(item => products.some(p => p.id === item.productId));
+            const { totalQty, subtotal, savings } = getCartSummary();
+
+            document.getElementById("headerCartCount").textContent = totalQty;
+            document.getElementById("floatingCartCount").textContent = totalQty;
+            document.getElementById("floatingCartTotal").textContent = `Total: ₹${formatINR(subtotal)}`;
+            document.getElementById("cartDrawerSubtitle").textContent = `${totalQty} item${totalQty === 1 ? '' : 's'} selected`;
+            document.getElementById("cartSubtotalText").textContent = `₹${formatINR(subtotal)}`;
+            document.getElementById("cartSavingsText").textContent = `- ₹${formatINR(savings)}`;
+            document.getElementById("cartGrandTotalText").textContent = `₹${formatINR(subtotal)}`;
+
+            const mobileBadge = document.getElementById("mobileNavCartBadge");
+            mobileBadge.textContent = totalQty;
+            mobileBadge.classList.toggle("hidden", totalQty === 0);
+
+            const floatingBar = document.getElementById("floatingCartBar");
+            floatingBar.classList.toggle("hidden", totalQty === 0);
+        }
+
+        function openCartDrawer() {
+            renderCartDrawerItems();
+            document.getElementById("cartDrawerBackdrop").classList.remove("hidden");
+        }
+
+        function closeCartDrawer() {
+            document.getElementById("cartDrawerBackdrop").classList.add("hidden");
+        }
+
+        function renderCartDrawerItems() {
+            const container = document.getElementById("cartItemsContainer");
+            const footer = document.getElementById("cartFooterBox");
+
+            if (cart.length === 0) {
+                footer.classList.add("hidden");
+                container.innerHTML = `
+                    <div class="py-16 text-center">
+                        <div class="w-16 h-16 rounded-2xl bg-carbon-800 border border-zinc-700 flex items-center justify-center mx-auto mb-3 text-zinc-500 text-2xl">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <h4 class="text-base font-bold text-white">Your cart is empty</h4>
+                        <p class="text-xs text-zinc-400 mt-1 mb-4">Add car accessories to place an online order or book store fitting.</p>
+                        <button onclick="closeCartDrawer()" class="px-5 py-2.5 rounded-xl bg-racing-600 text-white text-xs font-bold">
+                            Browse Accessories
+                        </button>
+                    </div>
+                `;
+                return;
+            }
+
+            footer.classList.remove("hidden");
+
+            container.innerHTML = cart.map(item => {
+                const prod = products.find(p => p.id === item.productId);
+                if (!prod) return "";
+                return `
+                    <div class="bg-carbon-950 border border-zinc-800 rounded-2xl p-3 flex gap-3">
+                        <div class="w-16 h-16 rounded-xl bg-carbon-800 border border-zinc-700/70 flex items-center justify-center flex-shrink-0 overflow-hidden p-1.5">
+                            ${prod.image ? `<img src="${prod.image}" class="w-full h-full object-cover rounded-lg">` : getCategorySvg(prod.category)}
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-start justify-between gap-2">
+                                <h5 class="text-xs sm:text-sm font-bold text-white leading-snug line-clamp-2">${escapeHtml(prod.name)}</h5>
+                                <button onclick="removeCartItem('${item.cartKey}')" class="text-zinc-500 hover:text-racing-500 p-1">
+                                    <i class="fa-solid fa-trash-can text-xs"></i>
+                                </button>
+                            </div>
+                            <p class="text-[10px] text-amber-400 font-medium mt-0.5">
+                                <i class="fa-solid fa-wrench mr-1"></i>${escapeHtml(item.installOption)}
+                            </p>
+                            <div class="mt-2 flex items-center justify-between">
+                                <span class="text-sm font-bold text-white">₹${formatINR(prod.price * item.qty)}</span>
+                                <div class="flex items-center gap-2 bg-carbon-900 border border-zinc-700 rounded-lg px-1.5 py-0.5">
+                                    <button onclick="updateCartItemQty('${item.cartKey}', -1)" class="w-6 h-6 text-zinc-300 hover:text-white flex items-center justify-center">
+                                        <i class="fa-solid fa-minus text-[10px]"></i>
+                                    </button>
+                                    <span class="text-xs font-bold text-white px-1">${item.qty}</span>
+                                    <button onclick="updateCartItemQty('${item.cartKey}', 1)" class="w-6 h-6 text-zinc-300 hover:text-white flex items-center justify-center">
+                                        <i class="fa-solid fa-plus text-[10px]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join("");
+        }
+
+        // ==================== CHECKOUT & ORDER CONFIRMATION ====================
+        function openCheckoutModal() {
+            if (cart.length === 0) {
+                showToast("Your cart is empty!", "error");
+                return;
+            }
+            closeCartDrawer();
+
+            const { totalQty, subtotal } = getCartSummary();
+            document.getElementById("checkoutItemCount").textContent = totalQty;
+            document.getElementById("checkoutTotalAmount").textContent = `₹${formatINR(subtotal)}`;
+
+            document.getElementById("checkoutModalTitle").textContent = "Complete Your Order";
+            document.getElementById("checkoutFormStep").classList.remove("hidden");
+            document.getElementById("orderConfirmationStep").classList.add("hidden");
+            document.getElementById("checkoutModal").classList.remove("hidden");
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById("checkoutModal").classList.add("hidden");
+        }
+
+        function toggleAddressField() {
+            const selected = document.querySelector('input[name="fulfillmentMethod"]:checked').value;
+            const isDelivery = selected.includes("Home Delivery");
+            const addrBox = document.getElementById("deliveryAddressBox");
+            const addrInput = document.getElementById("custAddress");
+            const pinInput = document.getElementById("custPincode");
+
+            addrBox.classList.toggle("hidden", !isDelivery);
+            addrInput.required = isDelivery;
+            pinInput.required = isDelivery;
+        }
+
+        function submitOnlineOrder(event) {
+            event.preventDefault();
+            if (cart.length === 0) return;
+
+            const name = document.getElementById("custName").value.trim();
+            const phone = document.getElementById("custPhone").value.trim();
+            const carModel = document.getElementById("custCarModel").value.trim();
+            const fulfillment = document.querySelector('input[name="fulfillmentMethod"]:checked').value;
+            const address = document.getElementById("custAddress").value.trim();
+            const pincode = document.getElementById("custPincode").value.trim();
+
+            const { subtotal } = getCartSummary();
+            const orderNumber = 1001 + orders.length;
+            const orderId = `#CFH-${orderNumber}`;
+            const nowStr = new Date().toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" });
+
+            const orderItems = cart.map(item => {
+                const prod = products.find(p => p.id === item.productId);
+                return {
+                    name: prod ? prod.name : "Accessory",
+                    qty: item.qty,
+                    price: prod ? prod.price : 0,
+                    installOption: item.installOption
+                };
+            });
+
+            const newOrder = {
+                orderId,
+                date: nowStr,
+                customerName: name,
+                customerPhone: phone,
+                carModel,
+                fulfillment,
+                address: fulfillment.includes("Home Delivery") ? `${address} - ${pincode}` : "Store Pickup at Ode Chokdi, Umreth",
+                items: orderItems,
+                total: subtotal,
+                status: "New"
+            };
+
+            orders.unshift(newOrder);
+            saveOrders();
+            lastConfirmedOrder = newOrder;
+
+            // Clear cart after placing order
+            cart = [];
+            saveCart();
+            updateCartBadgesAndTotals();
+
+            // Populate Confirmation Screen
+            document.getElementById("checkoutModalTitle").textContent = "Order Placed Successfully!";
+            document.getElementById("confirmedOrderId").textContent = newOrder.orderId;
+            document.getElementById("confirmedOrderDate").textContent = newOrder.date;
+            document.getElementById("confirmedGrandTotal").textContent = `₹${formatINR(newOrder.total)}`;
+
+            document.getElementById("confirmedCustomerDetails").innerHTML = `
+                <p><strong>Customer:</strong> ${escapeHtml(newOrder.customerName)} (${escapeHtml(newOrder.customerPhone)})</p>
+                <p><strong>Car Model:</strong> ${escapeHtml(newOrder.carModel)}</p>
+                <p><strong>Mode:</strong> ${escapeHtml(newOrder.fulfillment)}</p>
+                <p><strong>Location/Address:</strong> ${escapeHtml(newOrder.address)}</p>
+            `;
+
+            document.getElementById("confirmedItemsList").innerHTML = newOrder.items.map((it, idx) => `
+                <div class="flex justify-between items-start gap-2 py-1.5 border-b border-zinc-800/60">
+                    <div>
+                        <p class="font-semibold text-white">${idx + 1}. ${escapeHtml(it.name)} <span class="text-amber-400">×${it.qty}</span></p>
+                        <p class="text-[10px] text-zinc-400">${escapeHtml(it.installOption)}</p>
+                    </div>
+                    <span class="font-bold text-white">₹${formatINR(it.price * it.qty)}</span>
+                </div>
+            `).join("");
+
+            document.getElementById("checkoutFormStep").classList.add("hidden");
+            document.getElementById("orderConfirmationStep").classList.remove("hidden");
+            showToast(`Order ${orderId} created!`);
+        }
+
+        function sendConfirmedOrderToWhatsApp() {
+            if (!lastConfirmedOrder) return;
+            const o = lastConfirmedOrder;
+            const itemLines = o.items.map((it, i) => 
+                `${i + 1}. *${it.name}* ×${it.qty} = ₹${formatINR(it.price * it.qty)} (${it.installOption})`
+            ).join("\n");
+
+            const msg = `🚗 *NEW ONLINE ORDER — CAR FASHION HUB* 🚗\n` +
+                `*Order ID:* ${o.orderId}\n` +
+                `*Customer:* ${o.customerName}\n` +
+                `*Mobile:* ${o.customerPhone}\n` +
+                `*Car Model:* ${o.carModel}\n` +
+                `*Option:* ${o.fulfillment}\n` +
+                `*Address:* ${o.address}\n\n` +
+                `*Ordered Items:*\n${itemLines}\n\n` +
+                `*Grand Total:* ₹${formatINR(o.total)}\n` +
+                `_(Payment: Cash / UPI at Shop or COD)_`;
+
+            window.open(`https://wa.me/${SHOP_WHATSAPP}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
+        }
+
+        // ==================== SELLER ADMIN DASHBOARD ====================
+        function openSellerAdminTrigger() {
+            document.getElementById("sellerPinInput").value = "";
+            document.getElementById("sellerPinError").classList.add("hidden");
+            document.getElementById("sellerPinModal").classList.remove("hidden");
+            setTimeout(() => document.getElementById("sellerPinInput").focus(), 100);
+        }
+
+        function closeSellerPinModal() {
+            document.getElementById("sellerPinModal").classList.add("hidden");
+        }
+
+        function verifySellerPin(e) {
+            e.preventDefault();
+            const pin = document.getElementById("sellerPinInput").value.trim();
+            if (pin === SELLER_PIN) {
+                closeSellerPinModal();
+                document.getElementById("adminHeaderPill").classList.remove("hidden");
+                openSellerDashboard();
+            } else {
+                document.getElementById("sellerPinError").classList.remove("hidden");
+            }
+        }
+
+        function openSellerDashboard() {
+            renderAdminOrders();
+            renderAdminInventoryList();
+            switchAdminTab("orders");
+            document.getElementById("sellerDashboardModal").classList.remove("hidden");
+        }
+
+        function closeSellerDashboard() {
+            document.getElementById("sellerDashboardModal").classList.add("hidden");
+        }
+
+        function switchAdminTab(tab) {
+            const isOrders = tab === "orders";
+            document.getElementById("adminTabOrders").classList.toggle("hidden", !isOrders);
+            document.getElementById("adminTabProducts").classList.toggle("hidden", isOrders);
+
+            document.getElementById("tabBtnOrders").className = isOrders
+                ? "pb-3 px-2 border-b-2 border-racing-600 text-xs sm:text-sm font-bold text-white flex items-center gap-2"
+                : "pb-3 px-2 border-b-2 border-transparent text-xs sm:text-sm font-semibold text-zinc-400 hover:text-white flex items-center gap-2";
+
+            document.getElementById("tabBtnProducts").className = !isOrders
+                ? "pb-3 px-2 border-b-2 border-racing-600 text-xs sm:text-sm font-bold text-white flex items-center gap-2"
+                : "pb-3 px-2 border-b-2 border-transparent text-xs sm:text-sm font-semibold text-zinc-400 hover:text-white flex items-center gap-2";
+        }
+
+        function renderAdminOrders() {
+            const container = document.getElementById("adminTabOrders");
+            document.getElementById("adminOrdersBadge").textContent = orders.length;
+
+            if (orders.length === 0) {
+                container.innerHTML = `
+                    <div class="py-12 text-center bg-carbon-950 border border-zinc-800 rounded-2xl">
+                        <i class="fa-solid fa-receipt text-3xl text-zinc-600 mb-2"></i>
+                        <p class="text-sm font-bold text-white">No online orders received yet</p>
+                        <p class="text-xs text-zinc-400 mt-1">When customers checkout on your store, their orders appear here.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = orders.map((o, idx) => {
+                const statusColors = {
+                    "New": "bg-racing-600/20 text-racing-500 border-racing-600/40",
+                    "Confirmed": "bg-amber-500/20 text-amber-400 border-amber-500/40",
+                    "Completed": "bg-emerald-500/20 text-emerald-400 border-emerald-500/40"
+                };
+                return `
+                    <div class="bg-carbon-950 border border-zinc-800 rounded-2xl p-4 space-y-2.5">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-800 pb-2">
+                            <div>
+                                <span class="font-display text-lg font-bold text-amber-400">${escapeHtml(o.orderId)}</span>
+                                <span class="text-[11px] text-zinc-500 ml-2">${escapeHtml(o.date)}</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <select onchange="updateOrderStatus(${idx}, this.value)" class="px-2.5 py-1 rounded-lg border text-xs font-bold bg-carbon-900 outline-none ${statusColors[o.status] || statusColors['New']}">
+                                    <option value="New" ${o.status === 'New' ? 'selected' : ''}>Status: New</option>
+                                    <option value="Confirmed" ${o.status === 'Confirmed' ? 'selected' : ''}>Status: Confirmed</option>
+                                    <option value="Completed" ${o.status === 'Completed' ? 'selected' : ''}>Status: Completed</option>
+                                </select>
+                                <a href="tel:${o.customerPhone}" class="w-8 h-8 rounded-lg bg-emerald-600/20 text-emerald-400 flex items-center justify-center" title="Call Customer">
+                                    <i class="fa-solid fa-phone text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-xs text-zinc-300 grid grid-cols-1 sm:grid-cols-2 gap-1">
+                            <p><strong>Customer:</strong> ${escapeHtml(o.customerName)} (${escapeHtml(o.customerPhone)})</p>
+                            <p><strong>Car:</strong> ${escapeHtml(o.carModel)}</p>
+                            <p class="sm:col-span-2"><strong>Fulfillment:</strong> ${escapeHtml(o.fulfillment)} — ${escapeHtml(o.address)}</p>
+                        </div>
+                        <div class="bg-carbon-900 rounded-xl p-2.5 text-xs space-y-1">
+                            ${o.items.map(it => `<p class="text-zinc-300">• ${escapeHtml(it.name)} ×${it.qty} <span class="text-amber-400 font-semibold">(₹${formatINR(it.price * it.qty)})</span></p>`).join("")}
+                        </div>
+                        <div class="flex justify-between items-center pt-1">
+                            <span class="text-xs text-zinc-400">Order Total:</span>
+                            <span class="font-display text-xl font-bold text-white">₹${formatINR(o.total)}</span>
+                        </div>
+                    </div>
+                `;
+            }).join("");
+        }
+
+        function updateOrderStatus(index, newStatus) {
+            if (!orders[index]) return;
+            orders[index].status = newStatus;
+            saveOrders();
+            renderAdminOrders();
+            showToast(`Order status updated to ${newStatus}`);
+        }
+
+        // ==================== ADMIN PRODUCT MANAGEMENT ====================
+        function handleAdminPhotoUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    const canvas = document.createElement("canvas");
+                    const MAX_W = 640;
+                    const scale = Math.min(1, MAX_W / img.width);
+                    canvas.width = img.width * scale;
+                    canvas.height = img.height * scale;
+                    const ctx = canvas.getContext("2d");
+                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                    adminUploadedPhotoBase64 = canvas.toDataURL("image/jpeg", 0.78);
+                    document.getElementById("adminPhotoLabel").textContent = "Photo Selected ✓";
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function saveAdminProduct(event) {
+            event.preventDefault();
+            const editId = document.getElementById("adminProdId").value;
+            const name = document.getElementById("adminProdName").value.trim();
+            const category = document.getElementById("adminProdCategory").value;
+            const price = Number(document.getElementById("adminProdPrice").value);
+            const mrp = Number(document.getElementById("adminProdMrp").value);
+            const stock = document.getElementById("adminProdStock").value;
+            const warranty = document.getElementById("adminProdWarranty").value.trim() || "1 Year Warranty";
+            const cars = document.getElementById("adminProdCars").value.trim();
+            const specs = document.getElementById("adminProdSpecs").value.trim();
+
+            if (editId) {
+                const idx = products.findIndex(p => p.id === editId);
+                if (idx !== -1) {
+                    products[idx] = {
+                        ...products[idx],
+                        name, category, price, mrp, stock, warranty, cars, specs,
+                        image: adminUploadedPhotoBase64 || products[idx].image
+                    };
+                    showToast("Product updated!");
+                }
+            } else {
+                products.unshift({
+                    id: "prod-" + Date.now(),
+                    name, category, price, mrp, stock, warranty, cars, specs,
+                    image: adminUploadedPhotoBase64 || ""
+                });
+                showToast("New product added to store!");
+            }
+
+            saveProducts();
+            resetAdminProductForm();
+            renderAdminInventoryList();
+            renderProductGrid();
+        }
+
+        function editAdminProduct(prodId) {
+            const p = products.find(item => item.id === prodId);
+            if (!p) return;
+
+            document.getElementById("adminFormHeading").innerHTML = `<i class="fa-solid fa-pen mr-1"></i> Edit Product`;
+            document.getElementById("cancelEditProdBtn").classList.remove("hidden");
+            document.getElementById("adminProdId").value = p.id;
+            document.getElementById("adminProdName").value = p.name;
+            document.getElementById("adminProdCategory").value = p.category;
+            document.getElementById("adminProdPrice").value = p.price;
+            document.getElementById("adminProdMrp").value = p.mrp;
+            document.getElementById("adminProdStock").value = p.stock || "In Stock";
+            document.getElementById("adminProdWarranty").value = p.warranty || "1 Year Warranty";
+            document.getElementById("adminProdCars").value = p.cars;
+            document.getElementById("adminProdSpecs").value = p.specs;
+            adminUploadedPhotoBase64 = p.image || "";
+            document.getElementById("adminPhotoLabel").textContent = p.image ? "Existing Photo Kept (Tap to change)" : "Choose Photo (or keep default SVG)";
+            document.getElementById("adminTabProducts").scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        function resetAdminProductForm() {
+            document.getElementById("adminProductForm").reset();
+            document.getElementById("adminProdId").value = "";
+            document.getElementById("adminFormHeading").innerHTML = `<i class="fa-solid fa-plus-circle mr-1"></i> Add New Car Accessory`;
+            document.getElementById("cancelEditProdBtn").classList.add("hidden");
+            adminUploadedPhotoBase64 = "";
+            document.getElementById("adminPhotoLabel").textContent = "Choose Photo (or keep default SVG)";
+        }
+
+        function deleteAdminProduct(prodId) {
+            products = products.filter(p => p.id !== prodId);
+            saveProducts();
+            updateCartBadgesAndTotals();
+            renderAdminInventoryList();
+            renderProductGrid();
+            showToast("Product removed from store", "info");
+        }
+
+        function resetCatalogToDefaults() {
+            products = [...DEFAULT_PRODUCTS];
+            saveProducts();
+            renderAdminInventoryList();
+            renderProductGrid();
+            showToast("Default 12 products restored!");
+        }
+
+        function renderAdminInventoryList() {
+            const list = document.getElementById("adminInventoryList");
+            list.innerHTML = products.map(p => `
+                <div class="bg-carbon-950 border border-zinc-800 rounded-2xl p-3 flex items-center justify-between gap-3">
+                    <div class="flex items-center gap-3 min-w-0">
+                        <div class="w-12 h-12 rounded-xl bg-carbon-800 flex items-center justify-center flex-shrink-0 overflow-hidden p-1">
+                            ${p.image ? `<img src="${p.image}" class="w-full h-full object-cover rounded-lg">` : getCategorySvg(p.category)}
+                        </div>
+                        <div class="min-w-0">
+                            <h5 class="text-xs sm:text-sm font-bold text-white truncate">${escapeHtml(p.name)}</h5>
+                            <p class="text-[11px] text-amber-400 font-semibold">₹${formatINR(p.price)} <span class="text-zinc-500 line-through">₹${formatINR(p.mrp)}</span> • <span class="text-emerald-400">${escapeHtml(p.stock || 'In Stock')}</span></p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        <button onclick="editAdminProduct('${p.id}')" class="px-3 py-1.5 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 text-amber-400 text-xs font-bold">
+                            Edit
+                        </button>
+                        <button onclick="deleteAdminProduct('${p.id}')" class="px-3 py-1.5 rounded-lg bg-racing-600/15 hover:bg-racing-600/25 text-racing-500 text-xs font-bold">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            `).join("");
+        }
+
+        // ==================== UTILITIES ====================
+        let toastTimer;
+        function showToast(text, type = "success") {
+            const banner = document.getElementById("toastBanner");
+            const textEl = document.getElementById("toastText");
+            const iconEl = document.getElementById("toastIcon");
+
+            textEl.textContent = text;
+            iconEl.className = type === "error"
+                ? "fa-solid fa-circle-exclamation text-racing-500"
+                : type === "info"
+                ? "fa-solid fa-circle-info text-amber-400"
+                : "fa-solid fa-circle-check text-emerald-400";
+
+            banner.classList.remove("opacity-0", "-translate-y-2");
+            banner.classList.add("opacity-100", "translate-y-0");
+
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                banner.classList.remove("opacity-100", "translate-y-0");
+                banner.classList.add("opacity-0", "-translate-y-2");
+            }, 2500);
+        }
+
+        function escapeHtml(str) {
+            if (!str) return "";
+            return String(str)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+    </script>
+</body>
+</html>
             transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
         }
         .product-card:hover {
